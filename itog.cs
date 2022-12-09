@@ -1,8 +1,11 @@
-﻿// See https://aka.ms/new-console-template for more informatio
+﻿
 
 string[] array=GetMasiv();
 
-PrintArray(array);
+string[] array2= chengearray(array);
+
+PrintArray(array2);
+
 
 
 string[] GetMasiv()
@@ -33,6 +36,24 @@ int GetNumberFromUser(string message, string errorMessage)  //проверяет
         Console.WriteLine(errorMessage);
     }
 }
+
+
+
+string[] chengearray(string[] array)
+{ int m=0;
+   string[] array2=new string[array.GetLength(m)];
+for (int i = 0; i < array.GetLength(0); i++)
+{  
+   if (array[i].Length<=3)
+   {array2[m]=array[i];
+ m++;
+   }
+
+}
+return array2;
+}
+
+
 
 
 

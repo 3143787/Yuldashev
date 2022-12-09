@@ -2,6 +2,7 @@
 
 string[] array=GetMasiv();
 
+PrintArray(array);
 
 
 string[] GetMasiv()
@@ -33,3 +34,17 @@ int GetNumberFromUser(string message, string errorMessage)  //проверяет
     }
 }
 
+
+
+void PrintArray(string[] result )  // пишет масивx
+{
+
+
+for (int i = 0; i < result.GetLength(0) ; i++)
+{
+ 
+ 
+  Console.Write($"   {result[i]}   ");
+}
+}
+ 
